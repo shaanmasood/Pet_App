@@ -6,15 +6,18 @@
     scroll-behavior: smooth;
 }
 body{
-    background: linear-gradient(rgb(90, 35, 108),rgb(70, 6, 55));
+    background: rgb(241, 201, 156);
     min-height: 100vh;
+}
+.main{
+    background-size: 100%;
 }
 .sec1{
     display: flex;
     justify-content: space-between;
 }
 .sec1 .textbox{
-    color: white;
+    color: rgb(78,30,6);
     left: 40px;
     position: relative;
     animation: opac;
@@ -24,14 +27,15 @@ body{
     width: 600px;
     height: 400px;
     display:block;
+    justify-content: left;
 }
 .sec1 .textbox .heading{
-
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 100;
 }
 .sec1 .textbox .context{
     font-size: 20px;
+    font-weight: 500;
 }
 .photogallery{
     animation: opac;
@@ -72,71 +76,77 @@ body{
     width: 760px;
 }
 .firstframe .first{
-    filter: drop-shadow(black 2px 2px 10px);
+    filter: drop-shadow(black 1px 1px 5px);
     border-radius: 25px 100px;
     width: 510px;
     position: relative;
-    background-image: url('https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg');
-    background-size: 90%;
+    background-size: 120%;
     background-position-y:-20px ;
+    background-color: #fff;
     height: 220px;
 }
 .firstframe .second{
-    filter: drop-shadow(black 2px 2px 10px);
+    filter: drop-shadow(black 1px 1px 5px);
     border-radius: 25px 100px;
     position: relative;
-    background-image: url('https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg');
+    
     background-size: 140%;
-    background-position-x:-60px ;
     width: 230px;
     height: 220px;
     left:20px;
 }
 .secondframe .third{
-    filter: drop-shadow(black 2px 2px 10px);
+    filter: drop-shadow(black 1px 1px 5px);
     width: 230px;
     border-radius: 25px 100px;
     background-color: white;
     height: 220px;
 }
 .secondframe .fourth{
-    filter: drop-shadow(black 2px 2px 10px);
+    filter: drop-shadow(black 1px 1px 5px);
     position: relative;
     border-radius: 25px 100px;
     background-color: white;
+    background-size: cover;
+    background-position-x:5px ;
+    background-position-y:-40px ;
     width: 510px;
     height: 220px;
     left:20px;
 }
 header{
-    position: relative;
+    position: fixed;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     animation :hello;
+    color: rgb(78, 30, 6);
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     font-weight: 800;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
+    z-index: 2;
 }
 @keyframes hello {
     0%{
         font-size: 100px;
-        color: rgb(37, 4, 41);
     }
     100%{
         font-size: 35px;
-        color: rgb(255, 255, 255);
     }
+}
+
+.outercontainer{
+    padding-top: 80px;
 }
 .container{
     height: 5px;
     width: 350px;
     border-radius: 25px;
     animation:width;
-    background-color: rgb(37, 4, 41);
+    background-color: rgb(78, 30, 6);
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
@@ -164,7 +174,7 @@ header{
     width: 350px;
     border-radius: 25px;
     animation:width;
-    background-color: rgb(37, 4, 41);
+    background-color: rgb(78, 30, 6);
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
@@ -232,7 +242,7 @@ div #idcard:hover{
     justify-content: center;
     align-items: center;
     display: block;
-    color: white;
+    color: rgb(78, 30, 6);
     padding: 60px;
 }
 .headingservices{
@@ -243,23 +253,27 @@ header ul{
     display: flex;
     font-size: 20px;
     font-weight: 300;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 header ul li{
+    position: relative;
     list-style: none;
     margin-left: 20px;
 }
 header ul li a{
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 550;
     padding: 6px 15px;
     border-radius: 20px;
-    color: #fff;
+    color: rgb(78, 30, 6);
+    transition-property: all;
+    transition-duration: .5s;
 }
 header ul li :hover{
-    background-color: white;
-    color: #2b1055;
+    background-color: rgb(78,30,6);
+    color: #ffffff;
 }
 #namecard{
     justify-content: center;
@@ -267,7 +281,7 @@ header ul li :hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color: white;
+    color: rgb(78, 30, 6);
     font-size: 30px;
     font-weight: 300;
     position: relative;
