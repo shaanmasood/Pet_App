@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(rgb(90, 35, 108),rgb(70, 6, 55));
+    min-height: 100vh;
+}
+.sec1{
+    display: flex;
+    justify-content: space-between;
+}
+.sec1 .textbox{
+    color: white;
+    left: 40px;
+    position: relative;
+    animation: opac;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    top: 20px;
+    width: 600px;
+    height: 400px;
+    display:block;
+}
+.sec1 .textbox .heading{
+
+    font-size: 60px;
+    font-weight: 600;
+}
+.sec1 .textbox .context{
+    font-size: 20px;
+}
+.photogallery{
+    animation: opac;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    height: 500px;
+    width: 800px;
+    display: block;
+    justify-content: left;
+    position: relative;
+    top:20px;
+    right:20px;
+}
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.firstframe{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 220px;
+    width: 760px;
+    right: 20px;
+}
+.secondframe{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top:40px;
+    left: 20px;
+    height: 220px;
+    width: 760px;
+}
+.firstframe .first{
+    filter: drop-shadow(black 2px 2px 10px);
+    border-radius: 25px 100px;
+    width: 510px;
+    position: relative;
+    background-image: url('https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg');
+    background-size: 90%;
+    background-position-y:-20px ;
+    height: 220px;
+}
+.firstframe .second{
+    filter: drop-shadow(black 2px 2px 10px);
+    border-radius: 25px 100px;
+    position: relative;
+    background-image: url('https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg');
+    background-size: 140%;
+    background-position-x:-60px ;
+    width: 230px;
+    height: 220px;
+    left:20px;
+}
+.secondframe .third{
+    filter: drop-shadow(black 2px 2px 10px);
+    width: 230px;
+    border-radius: 25px 100px;
+    background-color: white;
+    height: 220px;
+}
+.secondframe .fourth{
+    filter: drop-shadow(black 2px 2px 10px);
+    position: relative;
+    border-radius: 25px 100px;
+    background-color: white;
+    width: 510px;
+    height: 220px;
+    left:20px;
+}
+header{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    animation :hello;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    font-weight: 800;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+@keyframes hello {
+    0%{
+        font-size: 100px;
+        color: rgb(37, 4, 41);
+    }
+    100%{
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+}
+.container{
+    height: 5px;
+    width: 350px;
+    border-radius: 25px;
+    animation:width;
+    background-color: rgb(37, 4, 41);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes width {
+    0%{
+        height: 3px;
+        width: 30px;
+    }
+    600%{
+        width: 50px;
+    }
+    100%{
+        width: 350px;
+        height: 5px;
+    }
+}
+.outercontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.container2{
+    display: flex;
+    justify-content: right;
+    height: 5px;
+    width: 350px;
+    border-radius: 25px;
+    animation:width;
+    background-color: rgb(37, 4, 41);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes width2{
+    0%{
+        height: 3px;
+        width: 30px;
+    }
+    600%{
+        width: 50px;
+    }
+    100%{
+        width: 350px;
+        height: 5px;
+    }
+}
+section{
+    height: 100vh;
+}
+.threecontainer{
+    padding-top: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+#card{
+    height: 250px;
+    background-color: white;
+    border-radius: 25px;
+    width: 450px;
+    filter: drop-shadow(black 2px 2px 4px);
+    animation: opac;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    transition: all .4s ease-in-out;
+}
+div #card:hover{
+    filter: drop-shadow(white 2px 2px 8px);
+    width: 475px;
+}
+.fourcontainer{
+    padding-top: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#idcard{
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    width: 250px;
+    filter: drop-shadow(black 2px 2px 4px);
+    animation: opac;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    transition: all .4s ease-in-out;
+}
+div #idcard:hover{
+    filter: drop-shadow(white 2px 2px 8px);
+}
+.servicestext{
+    width: 1400px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    color: white;
+    padding: 60px;
+}
+.headingservices{
+    font-weight: 600;
+    font-size: 50px;
+}
+header ul{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+header ul li :hover{
+    background-color: white;
+    color: #2b1055;
+}
+#namecard{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+}
+#nameid{
+    position:relative;
+    width: 50px;
+    justify-content: center;
+}
